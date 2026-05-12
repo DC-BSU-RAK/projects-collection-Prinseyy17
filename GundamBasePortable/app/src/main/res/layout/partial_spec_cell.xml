@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Reusable spec cell — not directly used in the detail layout (spec cells are inline there),
+     but provided as a helper partial for any future refactor. -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?attr/colorSurface"
+    android:padding="10dp"
+    android:layout_margin="4dp">
+
+    <TextView
+        android:id="@+id/tv_spec_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        android:textColor="?attr/colorControlNormal"
+        android:text="LABEL" />
+
+    <TextView
+        android:id="@+id/tv_spec_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnSurface"
+        android:text="—" />
+
+</LinearLayout>

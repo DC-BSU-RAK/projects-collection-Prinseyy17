@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gundam Base Portable</string>
+
+    <!-- Navigation labels -->
+    <string name="nav_hangar">The Hangar</string>
+    <string name="nav_config">System Config</string>
+    <string name="nav_haro">Haro\'s Guide</string>
+
+    <!-- Detail screen -->
+    <string name="label_suit_specs">Suit Specs</string>
+    <string name="btn_back_to_hangar">Back to Hangar</string>
+
+    <!-- System Config -->
+    <string name="faction_efsf">Earth Federation (EFSF)</string>
+    <string name="faction_zeon">Principality of Zeon</string>
+
+    <!-- Haro guide -->
+    <string name="haro_guide_title">Haro\'s Guide</string>
+
+    <!-- Content descriptions -->
+    <string name="cd_suit_image">Mobile suit image</string>
+    <string name="cd_haro_fab">Open Haro\'s Guide</string>
+
+    <!-- Spec labels -->
+    <string name="spec_height">HEIGHT</string>
+    <string name="spec_weight">WEIGHT (DRY)</string>
+    <string name="spec_power">POWER OUTPUT</string>
+    <string name="spec_thrust">TOTAL THRUST</string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tenno Element Synthesizer</string>
+
+    <!-- Header -->
+    <string name="header_title">TENNO ELEMENT SYNTHESIZER</string>
+
+    <!-- Mod slot labels -->
+    <string name="slot1_label">MOD SLOT Ⅰ</string>
+    <string name="slot2_label">MOD SLOT Ⅱ</string>
+    <string name="slot_empty">—</string>
+
+    <!-- Result section -->
+    <string name="result_label">◈ SYNTHESIS RESULT ◈</string>
+    <string name="result_awaiting">AWAITING INPUT</string>
+
+    <!-- Grid label -->
+    <string name="grid_label">SELECT ELEMENTS</string>
+
+    <!-- Element buttons -->
+    <string name="btn_heat">🔥  HEAT</string>
+    <string name="btn_cold">❄️  COLD</string>
+    <string name="btn_toxin">☣️  TOXIN</string>
+    <string name="btn_electricity">⚡  ELECTRICITY</string>
+
+    <!-- Action buttons -->
+    <string name="btn_clear">⟳  CLEAR</string>
+    <string name="btn_synthesize">◈  SYNTHESIZE</string>
+
+    <!-- FAB -->
+    <string name="fab_instructions_desc">Instructions</string>
+
+    <!-- Snackbar -->
+    <string name="snackbar_slots_full">Both mod slots are filled. Press CLEAR to reset.</string>
+
+    <!-- Errors -->
+    <string name="error_insufficient">Synthesis Failed: Insufficient Elements</string>
+    <string name="error_duplicate">Synthesis Failed: Duplicate Elements</string>
+
+    <!-- Synthesis results -->
+    <string name="result_blast">Blast</string>
+    <string name="result_viral">Viral</string>
+    <string name="result_magnetic">Magnetic</string>
+    <string name="result_gas">Gas</string>
+    <string name="result_radiation">Radiation</string>
+    <string name="result_corrosive">Corrosive</string>
+    <string name="result_unknown">Unknown Combination</string>
+
+    <!-- Instructions dialog -->
+    <string name="dialog_title">📡  Incoming Transmission: The Lotus</string>
+    <string name="dialog_acknowledge">Acknowledge</string>
+    <string name="dialog_message">Tenno,\n\nThe Tenno Element Synthesizer allows you to combine two basic elemental damage types into a more powerful secondary element.\n\n─ HOW TO USE ─\n\n1. Tap any two element buttons to load them into the Mod Slots.\n\n2. Each slot accepts exactly one element. You cannot load the same element twice.\n\n3. Press SYNTHESIZE to calculate the resulting combined damage type.\n\n4. Press CLEAR at any time to reset both slots and start over.\n\n─ KNOWN COMBINATIONS ─\n\nHeat + Cold         →  Blast\nHeat + Toxin        →  Gas\nHeat + Electricity  →  Radiation\nCold + Toxin        →  Viral\nCold + Electricity  →  Magnetic\nToxin + Electricity →  Corrosive\n\nGood hunting, Tenno. The Origin System needs you.</string>
+</resources>

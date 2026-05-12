@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ── Neutral / shared ──────────────────────────────────────────────── -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <!-- ── Earth Federation Space Force (EFSF) ──────────────────────────── -->
+    <!-- Primary: deep Federation blue -->
+    <color name="efsf_primary">#FF1A3A6B</color>
+    <!-- Accent / secondary: bright white-blue -->
+    <color name="efsf_accent">#FF4FC3F7</color>
+    <!-- Background: very dark navy (near-black for OLED comfort) -->
+    <color name="efsf_background">#FF0D1B2E</color>
+    <!-- Surface (cards, dialogs) -->
+    <color name="efsf_surface">#FF162847</color>
+    <!-- Text on surface -->
+    <color name="efsf_on_surface">#FFF0F4FF</color>
+    <!-- Status bar / toolbar tint -->
+    <color name="efsf_status_bar">#FF0F2544</color>
+
+    <!-- ── Principality of Zeon ──────────────────────────────────────────── -->
+    <!-- Primary: dark military green -->
+    <color name="zeon_primary">#FF1B3A24</color>
+    <!-- Accent: Zeon crimson red -->
+    <color name="zeon_accent">#FFCC1122</color>
+    <!-- Background: very dark green-black -->
+    <color name="zeon_background">#FF0C1A0F</color>
+    <!-- Surface -->
+    <color name="zeon_surface">#FF162B1A</color>
+    <!-- Text on surface -->
+    <color name="zeon_on_surface">#FFF2F8F2</color>
+    <!-- Status bar -->
+    <color name="zeon_status_bar">#FF0A150D</color>
+
+    <!-- ── Other faction badge colours ──────────────────────────────────── -->
+    <!-- Space Colonies / ESUN (Wing era) -->
+    <color name="colony_primary">#FF5C4A8A</color>
+    <!-- Independent -->
+    <color name="independent_primary">#FF7A6030</color>
+
+    <!-- ── Bottom nav selector states ───────────────────────────────────── -->
+    <color name="bottom_nav_selected_efsf">#FF4FC3F7</color>
+    <color name="bottom_nav_selected_zeon">#FFCC1122</color>
+    <color name="bottom_nav_unselected">#AA8899AA</color>
+
+</resources>

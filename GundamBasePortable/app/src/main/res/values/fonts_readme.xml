@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Font declarations for Gundam Base Portable.
+
+    HOW TO ADD YOUR FONTS:
+    1. Download from Google Fonts:
+       • Orbitron Bold  → https://fonts.google.com/specimen/Orbitron
+       • Exo 2 Regular  → https://fonts.google.com/specimen/Exo+2
+    2. Place .ttf files in:
+         app/src/main/res/font/
+       with these exact filenames:
+         orbitron_bold.ttf
+         exo2_regular.ttf
+         exo2_semibold.ttf   (optional, for headings)
+
+    Until you add real files, the app will fall back to the system default sans-serif font.
+-->
+<resources>
+    <!-- Referenced in themes.xml as @font/orbitron_bold and @font/exo2_regular -->
+    <!-- Android resolves these from res/font/ automatically; no extra XML needed. -->
+</resources>

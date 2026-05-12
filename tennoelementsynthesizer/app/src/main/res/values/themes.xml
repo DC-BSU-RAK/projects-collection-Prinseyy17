@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.TennoElementSynthesizer" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/tenno_gold</item>
+        <item name="colorPrimaryVariant">@color/tenno_gold_dark</item>
+        <item name="colorOnPrimary">@color/tenno_black</item>
+        <item name="colorSecondary">@color/tenno_cyan</item>
+        <item name="colorSecondaryVariant">@color/tenno_cyan_dark</item>
+        <item name="colorOnSecondary">@color/tenno_black</item>
+        <item name="android:colorBackground">@color/tenno_black</item>
+        <item name="colorSurface">@color/tenno_dark_grey</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:windowBackground">@color/tenno_black</item>
+        <item name="colorControlHighlight">#33C9A84C</item>
+    </style>
+
+    <!-- Element input buttons -->
+    <style name="Widget.Tenno.ElementButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="strokeColor">@color/tenno_gold</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="rippleColor">#55C9A84C</item>
+        <item name="backgroundTint">@color/tenno_dark_grey</item>
+    </style>
+
+    <!-- Synthesize action button -->
+    <style name="Widget.Tenno.ActionButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/tenno_black</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.15</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="backgroundTint">@color/tenno_gold</item>
+        <item name="rippleColor">#55000000</item>
+    </style>
+
+    <!-- Clear action button -->
+    <style name="Widget.Tenno.ClearButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/tenno_cyan</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.15</item>
+        <item name="strokeColor">@color/tenno_cyan</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="rippleColor">#3300D4FF</item>
+        <item name="backgroundTint">@color/tenno_dark_grey</item>
+    </style>
+
+    <!-- Mod slot cards -->
+    <style name="Widget.Tenno.SlotCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/tenno_mid_grey</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardCornerRadius">6dp</item>
+        <item name="strokeColor">@color/tenno_gold_dark</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+</resources>

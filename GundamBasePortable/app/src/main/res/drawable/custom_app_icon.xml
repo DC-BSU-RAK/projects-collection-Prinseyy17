@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    custom_app_icon.xml
+    ══════════════════════════════════════════════════════════════════════
+    PLACEHOLDER launcher icon — replace with your real icon.
+
+    For a production icon:
+      1. Use Android Studio → File → New → Image Asset to generate
+         adaptive icon variants (mipmap-*dpi/).
+      2. Set android:icon and android:roundIcon in AndroidManifest.xml
+         to point to your mipmap resource, e.g.:
+           android:icon="@mipmap/ic_launcher"
+           android:roundIcon="@mipmap/ic_launcher_round"
+      3. Delete this file.
+
+    Or keep this XML as a debug placeholder.
+    ══════════════════════════════════════════════════════════════════════
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Background circle -->
+    <path android:fillColor="#FF1A3A6B"
+        android:pathData="M54,54m-54,0a54,54 0,1 1,108 0a54,54 0,1 1,-108 0" />
+
+    <!-- Stylised "G" initial -->
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M54,20 C35,20 20,35 20,54 C20,73 35,88 54,88
+                          C73,88 88,73 88,54 L88,50 L60,50 L60,58 L78,58
+                          C74,68 65,74 54,74 C39,74 28,63 28,54
+                          C28,41 39,34 54,34 C61,34 67,37 71,41 L77,35
+                          C72,30 63,26 54,20 Z" />
+
+</vector>

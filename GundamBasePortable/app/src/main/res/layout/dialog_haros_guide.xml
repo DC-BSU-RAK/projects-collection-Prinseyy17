@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    dialog_haros_guide.xml
+    "Haro's Guide" informational modal.
+    Triggered by the FAB or the Haro nav item in MainActivity.
+-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Haro icon / emoji header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🤖"
+            android:textSize="48sp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HARO'S GUIDE"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:gravity="center"
+            android:fontFamily="@font/orbitron_bold"
+            android:textColor="?attr/colorOnSurface" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gundam Base Portable &#8212; Pilot Handbook"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="?attr/colorControlNormal"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/colorSecondary"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Welcome message -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome, Pilot."
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorSecondary"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You have accessed the Gundam Base Portable combat database. This system contains classified combat data on Mobile Suits from across the Universal Century, After Colony, and AD timelines."
+            android:textSize="14sp"
+            android:lineSpacingMultiplier="1.5"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Step 1 -->
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <TextView android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:text="①"
+                android:textSize="18sp"
+                android:textColor="?attr/colorSecondary"
+                android:gravity="center" />
+            <LinearLayout android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BROWSE THE HANGAR"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.08"
+                    android:textColor="?attr/colorOnSurface" />
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select a Mobile Suit from the list to view its full combat specifications, armament loadout, and unit profile."
+                    android:textSize="13sp"
+                    android:lineSpacingMultiplier="1.4"
+                    android:textColor="?attr/colorControlNormal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Step 2 -->
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <TextView android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:text="②"
+                android:textSize="18sp"
+                android:textColor="?attr/colorSecondary"
+                android:gravity="center" />
+            <LinearLayout android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="READ THE SPECS"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.08"
+                    android:textColor="?attr/colorOnSurface" />
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The Suit Specs screen displays the unit's height, weight, power output, thrust rating, primary and secondary armament, and special onboard systems."
+                    android:textSize="13sp"
+                    android:lineSpacingMultiplier="1.4"
+                    android:textColor="?attr/colorControlNormal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Step 3 -->
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <TextView android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:text="③"
+                android:textSize="18sp"
+                android:textColor="?attr/colorSecondary"
+                android:gravity="center" />
+            <LinearLayout android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ALIGN YOUR OS"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.08"
+                    android:textColor="?attr/colorOnSurface" />
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Access the System Config tab at the bottom of the screen to align your operating system with the Earth Federation (EFSF) or the Principality of Zeon. Your choice changes the app's colour scheme."
+                    android:textSize="13sp"
+                    android:lineSpacingMultiplier="1.4"
+                    android:textColor="?attr/colorControlNormal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Step 4 -->
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+            <TextView android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:text="④"
+                android:textSize="18sp"
+                android:textColor="?attr/colorSecondary"
+                android:gravity="center" />
+            <LinearLayout android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CALL HARO ANYTIME"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.08"
+                    android:textColor="?attr/colorOnSurface" />
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tap the Haro button (bottom nav) or the floating action button to reopen this guide at any time. Haro! Haro!"
+                    android:textSize="13sp"
+                    android:lineSpacingMultiplier="1.4"
+                    android:textColor="?attr/colorControlNormal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/colorSecondary"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Closing flavour text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="&quot;A mobile suit is only as good as the pilot within it. Know your machine &#8212; know your enemy.&quot;\n\n&#8212; Haro, Gundam Base Portable AI"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:lineSpacingMultiplier="1.5"
+            android:textColor="?attr/colorControlNormal"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btn_close_guide"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="UNDERSTOOD, HARO!"
+            android:textStyle="bold"
+            android:letterSpacing="0.08"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

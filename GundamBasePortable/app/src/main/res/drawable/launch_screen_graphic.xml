@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    launch_screen_graphic.xml
+    ══════════════════════════════════════════════════════════════════════
+    PLACEHOLDER — replace with your custom launch screen image.
+
+    To use a custom image:
+      1. Export your graphic as a PNG at multiple densities:
+           drawable-mdpi/launch_screen_graphic.png    (320×480 px)
+           drawable-hdpi/launch_screen_graphic.png    (480×800 px)
+           drawable-xhdpi/launch_screen_graphic.png   (720×1280 px)
+           drawable-xxhdpi/launch_screen_graphic.png  (1080×1920 px)
+      2. Delete this .xml file.
+      3. The PNG files will be picked up automatically.
+
+    Alternatively, keep this XML and update the layer-list below.
+    ══════════════════════════════════════════════════════════════════════
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Dark navy background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FF0D1B2E" />
+        </shape>
+    </item>
+
+    <!-- Horizontal accent stripe -->
+    <item
+        android:top="300dp"
+        android:bottom="300dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FF1A3A6B" />
+        </shape>
+    </item>
+
+    <!-- Centred app icon placeholder (swap for @drawable/custom_app_icon when ready) -->
+    <item
+        android:width="120dp"
+        android:height="120dp"
+        android:gravity="center"
+        android:drawable="@drawable/gundam_silhouette" />
+
+</layer-list>

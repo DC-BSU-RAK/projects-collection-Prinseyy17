@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Simple warehouse/hangar icon: roof + walls -->
+    <path android:fillColor="@android:color/white"
+        android:pathData="M1,11L12,2L23,11V21H15V15H9V21H1V11Z" />
+</vector>

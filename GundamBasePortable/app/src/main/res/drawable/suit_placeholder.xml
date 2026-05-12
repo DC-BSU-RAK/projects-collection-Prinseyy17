@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    suit_placeholder.xml
+    Generic silhouette shown when a real suit image drawable is not found.
+    Replace individual suit images by placing PNG/JPG files named e.g.
+      suit_rx78_2.png, suit_ms06f.png … in res/drawable/.
+    The adapter will pick them up automatically.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="110dp"
+    android:height="110dp"
+    android:viewportWidth="110"
+    android:viewportHeight="110">
+
+    <!-- Background -->
+    <path android:fillColor="#1A2A40"
+        android:pathData="M0,0H110V110H0Z" />
+
+    <!-- Stylised humanoid mobile suit silhouette (simplified) -->
+    <!-- Head -->
+    <path android:fillColor="#2A4060"
+        android:pathData="M44,18 H66 V34 H44 Z" />
+    <!-- Neck -->
+    <path android:fillColor="#2A4060"
+        android:pathData="M49,34 H61 V40 H49 Z" />
+    <!-- Torso -->
+    <path android:fillColor="#2A4060"
+        android:pathData="M36,40 H74 V70 H36 Z" />
+    <!-- Left arm -->
+    <path android:fillColor="#223550"
+        android:pathData="M24,40 H36 V72 H24 Z" />
+    <!-- Right arm -->
+    <path android:fillColor="#223550"
+        android:pathData="M74,40 H86 V72 H74 Z" />
+    <!-- Left leg -->
+    <path android:fillColor="#2A4060"
+        android:pathData="M36,70 H52 V98 H36 Z" />
+    <!-- Right leg -->
+    <path android:fillColor="#2A4060"
+        android:pathData="M58,70 H74 V98 H58 Z" />
+    <!-- Mono-eye -->
+    <path android:fillColor="#4FC3F7"
+        android:pathData="M50,23 H60 V29 H50 Z" />
+
+    <!-- "IMAGE" label -->
+    <path android:fillColor="#4A6A8A"
+        android:pathData="M32,103 H78 V108 H32 Z" />
+</vector>

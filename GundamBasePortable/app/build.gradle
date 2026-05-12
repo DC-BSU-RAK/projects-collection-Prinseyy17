@@ -1,0 +1,70 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.plugin.parcelize'
+}
+
+android {
+    namespace 'com.gundambase.portable'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.gundambase.portable"
+        minSdk 26               // Android 8.0 Oreo — covers ~95%+ of active devices
+        targetSdk 35
+        versionCode 1
+        versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+            debuggable true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    buildFeatures {
+        viewBinding false   // set to true if you prefer ViewBinding over findViewById
+    }
+}
+
+dependencies {
+    // ── AndroidX core ───────────────────────────────────────────────────────
+    implementation 'androidx.core:core-ktx:1.15.0'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.activity:activity-ktx:1.9.3'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
+
+    // ── RecyclerView ────────────────────────────────────────────────────────
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+
+    // ── Material 3 ──────────────────────────────────────────────────────────
+    implementation 'com.google.android.material:material:1.12.0'
+
+    // ── CardView ─────────────────────────────────────────────────────────────
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    // ── Kotlin Parcelize (for @Parcelize data classes) ───────────────────────
+    // Included via the org.jetbrains.kotlin.plugin.parcelize plugin above — no extra dep needed
+
+    // ── Testing ──────────────────────────────────────────────────────────────
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+}

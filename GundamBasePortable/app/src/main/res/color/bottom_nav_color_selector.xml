@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Color state list for BottomNavigationView icon/text tint.
+    Selected state uses the accent colour; unselected uses muted grey.
+    Note: The programmatic accent varies by faction; this XML provides
+    the base selector structure. For fully dynamic tinting, call
+    bottomNav.itemIconTintList and itemTextColor programmatically
+    in MainActivity after loading the theme.
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_checked="true"
+        android:color="?attr/colorSecondary" />
+    <item
+        android:color="@color/bottom_nav_unselected" />
+</selector>

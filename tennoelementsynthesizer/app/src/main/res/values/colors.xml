@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core dark background tones -->
+    <color name="tenno_black">#0A0A0F</color>
+    <color name="tenno_dark_grey">#1A1A2E</color>
+    <color name="tenno_mid_grey">#16213E</color>
+    <color name="tenno_surface">#0F3460</color>
+
+    <!-- Accent colors — gold and neon cyan -->
+    <color name="tenno_gold">#C9A84C</color>
+    <color name="tenno_gold_dark">#8B6914</color>
+    <color name="tenno_cyan">#00D4FF</color>
+    <color name="tenno_cyan_dark">#0090AA</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">#E8E8E8</color>
+    <color name="text_secondary">#9E9E9E</color>
+    <color name="text_error">#FF5252</color>
+</resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    dialog_system_config.xml
+    "System Config" modal — Faction Alignment toggle.
+    Inflated inside an AlertDialog from MainActivity.
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="?android:attr/colorBackground">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚙  SYSTEM CONFIG"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        android:textColor="?attr/colorOnSurface"
+        android:fontFamily="@font/orbitron_bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Mobile Suit Operating System Alignment"
+        android:textSize="12sp"
+        android:textColor="?attr/colorControlNormal" />
+
+    <!-- Current OS label -->
+    <TextView
+        android:id="@+id/tv_current_os"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="12dp"
+        android:background="?attr/colorSurface"
+        android:textSize="13sp"
+        android:textStyle="italic"
+        android:textColor="?attr/colorSecondary"
+        tools:text="Current OS: Earth Federation Space Force" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="16dp"
+        android:background="?attr/colorControlNormal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECT FACTION ALIGNMENT:"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.15"
+        android:textColor="?attr/colorControlNormal"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Radio group: EFSF vs Zeon -->
+    <RadioGroup
+        android:id="@+id/radio_group_faction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Earth Federation option -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/faction_option_bg"
+            android:layout_marginBottom="8dp"
+            android:padding="12dp">
+
+            <RadioButton
+                android:id="@+id/rb_efsf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/efsf_primary" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🌍  EARTH FEDERATION (EFSF)"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/efsf_primary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blue theme · White accents · Federation justice"
+                    android:textSize="11sp"
+                    android:textColor="?attr/colorControlNormal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Zeon option -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/faction_option_bg"
+            android:padding="12dp">
+
+            <RadioButton
+                android:id="@+id/rb_zeon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/zeon_accent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⚡  PRINCIPALITY OF ZEON"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/zeon_accent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dark green theme · Red accents · Sieg Zeon!"
+                    android:textSize="11sp"
+                    android:textColor="?attr/colorControlNormal" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RadioGroup>
+
+    <!-- Warning note -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="⚠ Saving will restart the UI to apply the new OS alignment."
+        android:textSize="11sp"
+        android:textStyle="italic"
+        android:textColor="?attr/colorControlNormal" />
+
+    <!-- Action buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn_cancel_config"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="CANCEL"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:textColor="?attr/colorOnSurface" />
+
+        <Button
+            android:id="@+id/btn_save_config"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SAVE  ✓"
+            android:textStyle="bold"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
